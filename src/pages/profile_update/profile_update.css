@@ -1,0 +1,113 @@
+.profile{
+    min-height: 100vh;
+    background: linear-gradient(#596AFF, #383699);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.profile-container h3{
+    text-align: left;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.profile-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-container label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+    font-size: 14px;
+}
+
+.profile-container label:hover{
+    border-color: #596AFF;
+    background-color: #f8f9ff;
+}
+
+.profile-container label img{
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+}
+
+.profile-container input[type="text"],
+.profile-container textarea{
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    outline: none;
+    background-color: white;
+}
+
+.profile-container input[type="text"]:focus,
+.profile-container textarea:focus{
+    border-color: #596AFF;
+}
+
+.profile-container textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+.profile-container button{
+    background: linear-gradient(#596AFF, #383699);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile-container button:hover{
+    transform: translateY(-2px);
+}
+
+.profile-container > img.chat-icon,
+.profile-container > img.profile-preview{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container > img.profile-preview{
+    opacity: 1;
+    border: 4px solid white;
+}
